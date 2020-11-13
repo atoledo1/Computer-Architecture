@@ -281,7 +281,7 @@ class CPU:
         # increment pc to reach next instructions
         self.pc += 3
 
-    def jmp_instruction(self): #  ???
+    def jmp_instruction(self): 
         # get address of the given register and set it to pc
         reg_num = self.ram[self.pc + 1]
         self.pc = self.reg[reg_num]
